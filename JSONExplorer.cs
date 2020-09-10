@@ -138,7 +138,7 @@ namespace SPLookUp
         private void saveFile_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
             string name = saveJson.FileName;
-            JArray obj = JArray.Parse(jsonContainer.Text);
+            JArray obj = JArray.Parse("[" + jsonContainer.Text + "]");
             using (StreamWriter file = File.CreateText(name))
             using (JsonTextWriter writer = new JsonTextWriter(file))
             {

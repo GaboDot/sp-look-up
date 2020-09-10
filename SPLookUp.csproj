@@ -144,6 +144,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="icons\loading-bar.gif" />
+    <Content Include="screenshots\Screenshot_1.png" />
+    <Content Include="screenshots\Screenshot_2.png" />
+    <Content Include="screenshots\Screenshot_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
