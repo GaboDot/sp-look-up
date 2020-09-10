@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## SPLookUp
+Dekstop app for looking into SQL Server SP (Stored Procedure) whether executes or calls another(s) SP's, also gets tables involved in the searched SP.
 
-You can use the [editor on GitHub](https://github.com/g4b0-88/SPLookUp/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This app was developed with the intention when you don't have any knowledge about the database and the SP involved in it, so you just pick a random SP, put it in the LookUp app and will give you all the SP's inside and also the tables involved in it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How it Works?
+- Connec to the database
+- Takes the SP you pasted in the app
+- Extracts the text of it (SP_HELPTEXT)
+- Analyzes line per line to find any EXEC instruction inside
+- Split the line founded to get only the SP Name
+- Add it into an object ... and here we have recursion!
 
-### Markdown
+For each SP inside another repeat the process until there's no SP to extract.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Highlights
+- The process runs on background (thread)
+- Exludes SQL Keywords (at least a ton of them)
+- Excludes some weird words I found inside my SP's (this section could be adapted to your needs)
+- The result is shown as Json Treeview
+- Count all SP's it founded from the original SP
+- Measures process time
+- Exports Excel (thanks to [Aspose.Cells](https://docs.aspose.com/cells/net/))
+- Exports Json File
 
-```markdown
-Syntax highlighted code block
+### Screenshots
+![Alt text](/screenshots/Screenshot_1.png?raw=true "SearchBox")
+![Alt text](/screenshots/Screenshot_2.png?raw=true "JsonViewer")
+![Alt text](/screenshots/Screenshot_3.png?raw=true "ExportedFiles")
 
-# Header 1
-## Header 2
-### Header 3
+### Final Words
+- I used Aspose Cells as it exports directly JSON structure, however it has some bugs like mixing up one object inside another, any help here would be appreciated.
+- If you know any other library to export Json to a readable Excel, I would appreciate you share it with the repo.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/g4b0-88/SPLookUp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Thanks!
