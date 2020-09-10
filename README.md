@@ -1,7 +1,7 @@
 # SPLookUp
 Dekstop app for looking into SQL Server SP (Stored Procedure) whether executes or calls another(s) SP's, also gets tables involved in the searched SP.
 
-This app was developed witn the intention when you don't have any knowledge about the database and the SP involved in it, so you just pick a random SP, put it in the LookUp app and will give you all the SP's inside and also the tables involved in it.
+This app was developed with the intention when you don't have any knowledge about the database and the SP involved in it, so you just pick a random SP, put it in the LookUp app and will give you all the SP's inside and also the tables involved in it.
 
 # How it Works?
 - Connec to the database
