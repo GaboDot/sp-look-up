@@ -1,3 +1,4 @@
+![alt text](https://github.com/g4b0-88/SPLookUp/blob/master/screenshots/Screenshot_1.png?raw=true "SearchBox")
 ## SPLookUp
 Dekstop app for looking into SQL Server SP (Stored Procedure) whether executes or calls another(s) SP's, also gets tables involved in the searched SP.
 
