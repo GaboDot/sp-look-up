@@ -167,7 +167,7 @@
             this.MinimizeBox = false;
             this.Name = "SearchWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Search SP";
+            this.Text = "Search SP\'s";
             ((System.ComponentModel.ISupportInitialize)(this.loadingGif)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

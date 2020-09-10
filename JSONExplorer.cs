@@ -138,11 +138,11 @@ namespace SPLookUp
         private void saveFile_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
             string name = saveJson.FileName;
-            JArray obj = JArray.Parse("[" + jsonContainer.Text + "]");
+            JArray json = JArray.Parse("[" + jsonContainer.Text + "]");
             using (StreamWriter file = File.CreateText(name))
             using (JsonTextWriter writer = new JsonTextWriter(file))
             {
-                obj.WriteTo(writer);
+                json.WriteTo(writer);
             }
         }
 
