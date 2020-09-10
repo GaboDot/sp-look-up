@@ -24,7 +24,7 @@ For each SP inside another repeat the process until there's no SP to extract.
 - Exports Json File
 
 # Final Words
-I used Aspose Cells as it exports directly JSON structure, however it has some bugs like mixing up one object inside another, any help here would be appreciated.
-If you know any other library to export Json to a readable Excel, I would appreciate you share it with the repo.
+- I used Aspose Cells as it exports directly JSON structure, however it has some bugs like mixing up one object inside another, any help here would be appreciated.
+- If you know any other library to export Json to a readable Excel, I would appreciate you share it with the repo.
 
 Thanks!
