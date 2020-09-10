@@ -2,3 +2,4 @@ theme: jekyll-theme-cayman
 show_downloads: true
 github:
   zip_url: https://github.com/g4b0-88/SPLookUp/releases/download/1.0/SPLookUp.zip
+  another_url: https://github.com/g4b0-88/SPLookUp/archive/1.0.tar.gz
